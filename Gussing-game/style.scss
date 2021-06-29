@@ -1,0 +1,103 @@
+$dark-green:rgb(12, 139, 97);
+$light-green:rgb(17, 182, 127);
+$bg-color:rgba(143, 212, 189,0.5);
+$white:#fff;
+$gray:#babecc;
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: cursive;
+    font-size:20px;
+    ::selection{
+        background-color: $dark-green;
+        color:$white;
+    }
+}
+.container {
+    height:100vh;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: #a1ffce75,  /* Chrome 10-25, Safari 5.1-6 */
+    
+}
+
+.header{
+    font-size:30px;
+    text-align: center;
+    .title{
+        font-size:30px;
+        margin:10px;
+    }
+    .range{
+        font-size:15px;
+        font-weight: 100;
+    }
+}
+
+.line{
+    width:100%;
+    height:3px;
+    background-color: $dark-green;
+}
+
+.secret {
+    width:100px;
+    height:50px;
+    margin:-25px auto;
+    text-align: center;
+    background-color: $white;
+    border-radius: 5px;
+    vertical-align: center;
+}
+
+.correct-number{
+    position: relative;
+    top:10px;
+}
+
+
+.guess{
+    width:100px;
+    height:50px;
+    text-align: center;
+    outline:none;
+    border:none;
+    border-radius: 5px;
+    border:2px solid $dark-green;
+
+}
+
+.buttons {
+    button{
+        width:150px;
+        height:40px;
+        margin:10px;
+        border-radius:5px;
+        border:none;
+        outline:none;
+        color:#fff;
+        background-color: $light-green;
+
+        &:hover {
+            box-shadow:0px 0px -10px 3px $gray;
+            cursor:pointer;
+            background-color: $dark-green;
+        }
+
+        &:active{
+            box-shadow:-1px -1px 2px $white;
+        }
+    }
+}
+
+.info {
+    position: relative;
+    bottom:50px;
+    div{
+        margin:10px;
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Gusse Me</title>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+               <h1 class="title">Guess Me</h1>
+            <p class="range">I am a number between 1 and 20</p>
+        </div>
+            <div class="line">
+                <div class="secret">
+                    <p class="correct-number">?</p>
+                </div>
+            </div>
+            <p class="data">Start Guessing...</p>
+            <input class="guess" type="number" autofocus>
+            <div class="buttons">
+                <button class="check">check</button>
+                <button class="reset">reset</button>
+            </div>
+            <div class="info">
+                <div class="score"> Score : 20</div>
+                <div class="highest-score">Highest Score : 0</div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
